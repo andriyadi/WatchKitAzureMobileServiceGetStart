@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2D9CBC41943C2540017F096 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D9CBC31943C2540017F096 /* AppDelegate.swift */; };
+		A2D9CBCC1943C2540017F096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2D9CBCA1943C2540017F096 /* Main.storyboard */; };
+		A2D9CBCE1943C2540017F096 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2D9CBCD1943C2540017F096 /* Images.xcassets */; };
+		A2D9CBE41943C39D0017F096 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D9CBE31943C39D0017F096 /* ToDoTableViewController.swift */; };
+		A2E767C6194594DC00869113 /* ToDoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E767C5194594DC00869113 /* ToDoItemViewController.swift */; };
+		A50BB65F1AD358E800BDC6A4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50BB65E1AD358E800BDC6A4 /* InterfaceController.swift */; };
+		A50BB6611AD358E800BDC6A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50BB6601AD358E800BDC6A4 /* Images.xcassets */; };
+		A50BB6651AD358E800BDC6A4 /* ZumoGetStart WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = A50BB6641AD358E800BDC6A4 /* ZumoGetStart WatchKit App.app */; };
+		A50BB66D1AD358E800BDC6A4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50BB66B1AD358E800BDC6A4 /* Interface.storyboard */; };
+		A50BB66F1AD358E800BDC6A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50BB66E1AD358E800BDC6A4 /* Images.xcassets */; };
+		A50BB6721AD358E800BDC6A4 /* ZumoGetStart WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A50BB65A1AD358E800BDC6A4 /* ZumoGetStart WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A50BB67B1AD35AE000BDC6A4 /* TaskRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50BB67A1AD35AE000BDC6A4 /* TaskRowController.swift */; };
+		A50BB67D1AD362C500BDC6A4 /* TaskDetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50BB67C1AD362C500BDC6A4 /* TaskDetailInterfaceController.swift */; };
+		A50D18791AD3C41500E81F40 /* TTWKActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A50D18781AD3C41500E81F40 /* TTWKActivityIndicator.m */; };
+		A54DE9D51AB6806B00D9D092 /* AutocompleteTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54DE9D41AB6806B00D9D092 /* AutocompleteTextfield.swift */; };
+		A55011AC19D3D44C006479DA /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55011AB19D3D44C006479DA /* WindowsAzureMobileServices.framework */; };
+		A55EBC761AD5B27E00E92421 /* ToDoEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55EBC751AD5B27E00E92421 /* ToDoEngine.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A50BB6661AD358E800BDC6A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2D9CBB61943C2540017F096 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50BB6631AD358E800BDC6A4;
+			remoteInfo = "ZumoGetStart WatchKit App";
+		};
+		A50BB6701AD358E800BDC6A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2D9CBB61943C2540017F096 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50BB6591AD358E800BDC6A4;
+			remoteInfo = "ZumoGetStart WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A50BB6791AD358E800BDC6A4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A50BB6721AD358E800BDC6A4 /* ZumoGetStart WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A2D9CBBE1943C2540017F096 /* ZumoGetStart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZumoGetStart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D9CBC21943C2540017F096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2D9CBC31943C2540017F096 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2D9CBCB1943C2540017F096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2D9CBCD1943C2540017F096 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A2D9CBE31943C39D0017F096 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		A2D9CBE81943D1340017F096 /* ZUMOAPPNAME-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZUMOAPPNAME-Bridging-Header.h"; sourceTree = "<group>"; };
+		A2E767C5194594DC00869113 /* ToDoItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemViewController.swift; sourceTree = "<group>"; };
+		A50BB65A1AD358E800BDC6A4 /* ZumoGetStart WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ZumoGetStart WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50BB65D1AD358E800BDC6A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50BB65E1AD358E800BDC6A4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A50BB6601AD358E800BDC6A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A50BB6641AD358E800BDC6A4 /* ZumoGetStart WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZumoGetStart WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50BB66A1AD358E800BDC6A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50BB66C1AD358E800BDC6A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A50BB66E1AD358E800BDC6A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A50BB67A1AD35AE000BDC6A4 /* TaskRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRowController.swift; sourceTree = "<group>"; };
+		A50BB67C1AD362C500BDC6A4 /* TaskDetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailInterfaceController.swift; sourceTree = "<group>"; };
+		A50BB67E1AD365C300BDC6A4 /* ZumoGetStart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ZumoGetStart.entitlements; sourceTree = "<group>"; };
+		A50BB67F1AD3660300BDC6A4 /* ZumoGetStart WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ZumoGetStart WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		A50D18761AD3C41400E81F40 /* ZumoGetStart WatchKit Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZumoGetStart WatchKit Extension-Bridging-Header.h"; sourceTree = "<group>"; };
+		A50D18771AD3C41500E81F40 /* TTWKActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTWKActivityIndicator.h; sourceTree = "<group>"; };
+		A50D18781AD3C41500E81F40 /* TTWKActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTWKActivityIndicator.m; sourceTree = "<group>"; };
+		A54DE9D41AB6806B00D9D092 /* AutocompleteTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutocompleteTextfield.swift; sourceTree = "<group>"; };
+		A55011AB19D3D44C006479DA /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WindowsAzureMobileServices.framework; path = ZUMOAPPNAME/WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
+		A55EBC751AD5B27E00E92421 /* ToDoEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoEngine.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2D9CBBB1943C2540017F096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A55011AC19D3D44C006479DA /* WindowsAzureMobileServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50BB6571AD358E800BDC6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2D9CBB51943C2540017F096 = {
+			isa = PBXGroup;
+			children = (
+				A50BB67E1AD365C300BDC6A4 /* ZumoGetStart.entitlements */,
+				A2D9CBC01943C2540017F096 /* ZUMOAPPNAME */,
+				A50BB65B1AD358E800BDC6A4 /* ZumoGetStart WatchKit Extension */,
+				A50BB6681AD358E800BDC6A4 /* ZumoGetStart WatchKit App */,
+				A2D9CBBF1943C2540017F096 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2D9CBBF1943C2540017F096 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2D9CBBE1943C2540017F096 /* ZumoGetStart.app */,
+				A50BB65A1AD358E800BDC6A4 /* ZumoGetStart WatchKit Extension.appex */,
+				A50BB6641AD358E800BDC6A4 /* ZumoGetStart WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2D9CBC01943C2540017F096 /* ZUMOAPPNAME */ = {
+			isa = PBXGroup;
+			children = (
+				A54DE9D31AB6806B00D9D092 /* AutocompleteTextfield */,
+				A2D9CBC31943C2540017F096 /* AppDelegate.swift */,
+				A2D9CBCA1943C2540017F096 /* Main.storyboard */,
+				A2D9CBCD1943C2540017F096 /* Images.xcassets */,
+				A2D9CBC11943C2540017F096 /* Supporting Files */,
+				A2D9CBE31943C39D0017F096 /* ToDoTableViewController.swift */,
+				A2E767C5194594DC00869113 /* ToDoItemViewController.swift */,
+				A55EBC751AD5B27E00E92421 /* ToDoEngine.swift */,
+				A2D9CBE51943CB520017F096 /* frameworks */,
+				A2D9CBE81943D1340017F096 /* ZUMOAPPNAME-Bridging-Header.h */,
+			);
+			path = ZUMOAPPNAME;
+			sourceTree = "<group>";
+		};
+		A2D9CBC11943C2540017F096 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2D9CBC21943C2540017F096 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2D9CBE51943CB520017F096 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A55011AB19D3D44C006479DA /* WindowsAzureMobileServices.framework */,
+			);
+			name = frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A50BB65B1AD358E800BDC6A4 /* ZumoGetStart WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A50D18771AD3C41500E81F40 /* TTWKActivityIndicator.h */,
+				A50D18781AD3C41500E81F40 /* TTWKActivityIndicator.m */,
+				A50BB67F1AD3660300BDC6A4 /* ZumoGetStart WatchKit Extension.entitlements */,
+				A50BB65E1AD358E800BDC6A4 /* InterfaceController.swift */,
+				A50BB67C1AD362C500BDC6A4 /* TaskDetailInterfaceController.swift */,
+				A50BB67A1AD35AE000BDC6A4 /* TaskRowController.swift */,
+				A50BB6601AD358E800BDC6A4 /* Images.xcassets */,
+				A50BB65C1AD358E800BDC6A4 /* Supporting Files */,
+				A50D18761AD3C41400E81F40 /* ZumoGetStart WatchKit Extension-Bridging-Header.h */,
+			);
+			path = "ZumoGetStart WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A50BB65C1AD358E800BDC6A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A50BB65D1AD358E800BDC6A4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A50BB6681AD358E800BDC6A4 /* ZumoGetStart WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A50BB66B1AD358E800BDC6A4 /* Interface.storyboard */,
+				A50BB66E1AD358E800BDC6A4 /* Images.xcassets */,
+				A50BB6691AD358E800BDC6A4 /* Supporting Files */,
+			);
+			path = "ZumoGetStart WatchKit App";
+			sourceTree = "<group>";
+		};
+		A50BB6691AD358E800BDC6A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A50BB66A1AD358E800BDC6A4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A54DE9D31AB6806B00D9D092 /* AutocompleteTextfield */ = {
+			isa = PBXGroup;
+			children = (
+				A54DE9D41AB6806B00D9D092 /* AutocompleteTextfield.swift */,
+			);
+			path = AutocompleteTextfield;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2D9CBBD1943C2540017F096 /* ZumoGetStart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2D9CBDD1943C2540017F096 /* Build configuration list for PBXNativeTarget "ZumoGetStart" */;
+			buildPhases = (
+				A2D9CBBA1943C2540017F096 /* Sources */,
+				A2D9CBBB1943C2540017F096 /* Frameworks */,
+				A2D9CBBC1943C2540017F096 /* Resources */,
+				A50BB6791AD358E800BDC6A4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A50BB6711AD358E800BDC6A4 /* PBXTargetDependency */,
+			);
+			name = ZumoGetStart;
+			productName = ZUMOAPPNAME;
+			productReference = A2D9CBBE1943C2540017F096 /* ZumoGetStart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A50BB6591AD358E800BDC6A4 /* ZumoGetStart WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A50BB6761AD358E800BDC6A4 /* Build configuration list for PBXNativeTarget "ZumoGetStart WatchKit Extension" */;
+			buildPhases = (
+				A50BB6561AD358E800BDC6A4 /* Sources */,
+				A50BB6571AD358E800BDC6A4 /* Frameworks */,
+				A50BB6581AD358E800BDC6A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A50BB6671AD358E800BDC6A4 /* PBXTargetDependency */,
+			);
+			name = "ZumoGetStart WatchKit Extension";
+			productName = "ZumoGetStart WatchKit Extension";
+			productReference = A50BB65A1AD358E800BDC6A4 /* ZumoGetStart WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		A50BB6631AD358E800BDC6A4 /* ZumoGetStart WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A50BB6731AD358E800BDC6A4 /* Build configuration list for PBXNativeTarget "ZumoGetStart WatchKit App" */;
+			buildPhases = (
+				A50BB6621AD358E800BDC6A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZumoGetStart WatchKit App";
+			productName = "ZumoGetStart WatchKit App";
+			productReference = A50BB6641AD358E800BDC6A4 /* ZumoGetStart WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2D9CBB61943C2540017F096 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Microsoft;
+				TargetAttributes = {
+					A2D9CBBD1943C2540017F096 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = JPZ6KYYR2L;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A50BB6591AD358E800BDC6A4 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = JPZ6KYYR2L;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A50BB6631AD358E800BDC6A4 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = A2D9CBB91943C2540017F096 /* Build configuration list for PBXProject "ZumoGetStart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2D9CBB51943C2540017F096;
+			productRefGroup = A2D9CBBF1943C2540017F096 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2D9CBBD1943C2540017F096 /* ZumoGetStart */,
+				A50BB6591AD358E800BDC6A4 /* ZumoGetStart WatchKit Extension */,
+				A50BB6631AD358E800BDC6A4 /* ZumoGetStart WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2D9CBBC1943C2540017F096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D9CBCC1943C2540017F096 /* Main.storyboard in Resources */,
+				A2D9CBCE1943C2540017F096 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50BB6581AD358E800BDC6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50BB6611AD358E800BDC6A4 /* Images.xcassets in Resources */,
+				A50BB6651AD358E800BDC6A4 /* ZumoGetStart WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50BB6621AD358E800BDC6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50BB66D1AD358E800BDC6A4 /* Interface.storyboard in Resources */,
+				A50BB66F1AD358E800BDC6A4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2D9CBBA1943C2540017F096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E767C6194594DC00869113 /* ToDoItemViewController.swift in Sources */,
+				A54DE9D51AB6806B00D9D092 /* AutocompleteTextfield.swift in Sources */,
+				A2D9CBE41943C39D0017F096 /* ToDoTableViewController.swift in Sources */,
+				A2D9CBC41943C2540017F096 /* AppDelegate.swift in Sources */,
+				A55EBC761AD5B27E00E92421 /* ToDoEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50BB6561AD358E800BDC6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50BB65F1AD358E800BDC6A4 /* InterfaceController.swift in Sources */,
+				A50BB67D1AD362C500BDC6A4 /* TaskDetailInterfaceController.swift in Sources */,
+				A50D18791AD3C41500E81F40 /* TTWKActivityIndicator.m in Sources */,
+				A50BB67B1AD35AE000BDC6A4 /* TaskRowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A50BB6671AD358E800BDC6A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A50BB6631AD358E800BDC6A4 /* ZumoGetStart WatchKit App */;
+			targetProxy = A50BB6661AD358E800BDC6A4 /* PBXContainerItemProxy */;
+		};
+		A50BB6711AD358E800BDC6A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A50BB6591AD358E800BDC6A4 /* ZumoGetStart WatchKit Extension */;
+			targetProxy = A50BB6701AD358E800BDC6A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A2D9CBCA1943C2540017F096 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2D9CBCB1943C2540017F096 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A50BB66B1AD358E800BDC6A4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A50BB66C1AD358E800BDC6A4 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2D9CBDB1943C2540017F096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2D9CBDC1943C2540017F096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2D9CBDE1943C2540017F096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ZumoGetStart.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ZUMOAPPNAME",
+				);
+				INFOPLIST_FILE = ZUMOAPPNAME/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = ZumoGetStart;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZUMOAPPNAME/ZUMOAPPNAME-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2D9CBDF1943C2540017F096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ZumoGetStart.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ZUMOAPPNAME",
+				);
+				INFOPLIST_FILE = ZUMOAPPNAME/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = ZumoGetStart;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZUMOAPPNAME/ZUMOAPPNAME-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		A50BB6741AD358E800BDC6A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = ZumoGetStart_WatchKit_Extension;
+				INFOPLIST_FILE = "ZumoGetStart WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		A50BB6751AD358E800BDC6A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				IBSC_MODULE = ZumoGetStart_WatchKit_Extension;
+				INFOPLIST_FILE = "ZumoGetStart WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		A50BB6771AD358E800BDC6A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "ZumoGetStart WatchKit Extension/ZumoGetStart WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ZumoGetStart WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ZumoGetStart WatchKit Extension/ZumoGetStart WatchKit Extension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A50BB6781AD358E800BDC6A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "ZumoGetStart WatchKit Extension/ZumoGetStart WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = "ZumoGetStart WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ZumoGetStart WatchKit Extension/ZumoGetStart WatchKit Extension-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2D9CBB91943C2540017F096 /* Build configuration list for PBXProject "ZumoGetStart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D9CBDB1943C2540017F096 /* Debug */,
+				A2D9CBDC1943C2540017F096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2D9CBDD1943C2540017F096 /* Build configuration list for PBXNativeTarget "ZumoGetStart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D9CBDE1943C2540017F096 /* Debug */,
+				A2D9CBDF1943C2540017F096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A50BB6731AD358E800BDC6A4 /* Build configuration list for PBXNativeTarget "ZumoGetStart WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A50BB6741AD358E800BDC6A4 /* Debug */,
+				A50BB6751AD358E800BDC6A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A50BB6761AD358E800BDC6A4 /* Build configuration list for PBXNativeTarget "ZumoGetStart WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A50BB6771AD358E800BDC6A4 /* Debug */,
+				A50BB6781AD358E800BDC6A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2D9CBB61943C2540017F096 /* Project object */;
+}
