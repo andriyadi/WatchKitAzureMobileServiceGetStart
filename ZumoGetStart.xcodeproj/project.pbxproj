@@ -76,7 +76,6 @@
 		A50BB66E1AD358E800BDC6A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A50BB67A1AD35AE000BDC6A4 /* TaskRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRowController.swift; sourceTree = "<group>"; };
 		A50BB67C1AD362C500BDC6A4 /* TaskDetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailInterfaceController.swift; sourceTree = "<group>"; };
-		A50BB67E1AD365C300BDC6A4 /* ZumoGetStart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ZumoGetStart.entitlements; sourceTree = "<group>"; };
 		A50BB67F1AD3660300BDC6A4 /* ZumoGetStart WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ZumoGetStart WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		A50D18761AD3C41400E81F40 /* ZumoGetStart WatchKit Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZumoGetStart WatchKit Extension-Bridging-Header.h"; sourceTree = "<group>"; };
 		A50D18771AD3C41500E81F40 /* TTWKActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTWKActivityIndicator.h; sourceTree = "<group>"; };
@@ -108,7 +107,6 @@
 		A2D9CBB51943C2540017F096 = {
 			isa = PBXGroup;
 			children = (
-				A50BB67E1AD365C300BDC6A4 /* ZumoGetStart.entitlements */,
 				A2D9CBC01943C2540017F096 /* ZUMOAPPNAME */,
 				A50BB65B1AD358E800BDC6A4 /* ZumoGetStart WatchKit Extension */,
 				A50BB6681AD358E800BDC6A4 /* ZumoGetStart WatchKit App */,
@@ -279,7 +277,7 @@
 						DevelopmentTeam = JPZ6KYYR2L;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -288,7 +286,7 @@
 						DevelopmentTeam = JPZ6KYYR2L;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -491,7 +489,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = ZumoGetStart.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -515,7 +512,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = ZumoGetStart.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -571,7 +567,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "ZumoGetStart WatchKit Extension/ZumoGetStart WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -594,7 +589,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "ZumoGetStart WatchKit Extension/ZumoGetStart WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
