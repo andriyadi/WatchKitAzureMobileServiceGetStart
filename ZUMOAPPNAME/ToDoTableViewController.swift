@@ -44,7 +44,7 @@ class ToDoTableViewController: UITableViewController, ToDoItemDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!)
     {
         if segue.identifier == "addItem" {
-            let todoController = segue.destinationViewController as ToDoItemViewController
+            let todoController = segue.destinationViewController as! ToDoItemViewController
             todoController.delegate = self
         }
     }
@@ -83,7 +83,7 @@ class ToDoTableViewController: UITableViewController, ToDoItemDelegate {
                 
             }
             else {
-                self.records = result as [NSMutableDictionary]
+                self.records = result as! [NSMutableDictionary]
                 println("Information: retrieved %d records", result.count)
                 
                 self.tableView.reloadData()
@@ -138,7 +138,7 @@ class ToDoTableViewController: UITableViewController, ToDoItemDelegate {
     
     func loadImageForIndexPath(indexPath: NSIndexPath) {
         let record = self.records[indexPath.row]
-        let recordId = record["id"] as String!
+        let recordId = record["id"] as! String!
         
         if let image = self.imageCache[recordId] as? UIImage {
             
@@ -148,7 +148,7 @@ class ToDoTableViewController: UITableViewController, ToDoItemDelegate {
         }
         else {
             
-            let predicate = NSPredicate(format: "id == %@", record["id"] as String!)
+            let predicate = NSPredicate(format: "id == %@", record["id"] as! String!)
             let query = self.table?.queryWithPredicate(predicate)
             
             weak var wself: ToDoTableViewController? = self
@@ -179,7 +179,7 @@ class ToDoTableViewController: UITableViewController, ToDoItemDelegate {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let CellIdentifier = "Cell"
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier, forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier, forIndexPath: indexPath) as! UITableViewCell
         let item = self.records[indexPath.row]
         
         cell.textLabel?.text = item["text"] as? String

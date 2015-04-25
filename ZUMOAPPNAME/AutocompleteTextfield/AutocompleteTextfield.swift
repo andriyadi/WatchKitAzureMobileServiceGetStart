@@ -78,11 +78,11 @@ class AutocompleteTextfield:UITextField, UITableViewDataSource, UITableViewDeleg
   private var attributedAutocompleteStrings:[NSAttributedString]?
   
   
-  override init() {
-    super.init()
-    
-    initialize()
-  }
+//  override init() {
+//    super.init()
+//    
+//    initialize()
+//  }
   
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -149,7 +149,7 @@ class AutocompleteTextfield:UITextField, UITableViewDataSource, UITableViewDeleg
         for i in 0..<autoCompleteStrings!.count{
           let str = autoCompleteStrings![i] as NSString
           let range = str.rangeOfString(text, options: .CaseInsensitiveSearch)
-          var attString = NSMutableAttributedString(string: str, attributes: attrs)
+          var attString = NSMutableAttributedString(string: str as String as String, attributes: attrs)
           attString.addAttributes(autoCompleteAttributes!, range: range)
           attributedAutocompleteStrings?.append(attString)
         }

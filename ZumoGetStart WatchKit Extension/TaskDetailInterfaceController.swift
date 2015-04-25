@@ -28,7 +28,7 @@ class TaskDetailInterfaceController: WKInterfaceController {
         if let theTask = context as? Dictionary<String, AnyObject> {
             self.task = theTask
             taskLabel.setText(theTask["text"] as? String)
-            completingSwitch.setOn(theTask["complete"] as Bool)
+            completingSwitch.setOn(theTask["complete"] as! Bool)
         }
     }
     
@@ -36,7 +36,7 @@ class TaskDetailInterfaceController: WKInterfaceController {
         //println("Switch \(value)")
         
         let userInfo = ["action": "completeTask", "data": self.task!]
-        WKInterfaceController.openParentApplication(userInfo, reply: { (replyInfo, error) -> Void in
+        WKInterfaceController.openParentApplication(userInfo as [NSObject : AnyObject], reply: { (replyInfo, error) -> Void in
             println("Reply: \(replyInfo)")
         })
     }

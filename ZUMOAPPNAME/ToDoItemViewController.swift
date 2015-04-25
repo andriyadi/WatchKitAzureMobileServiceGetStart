@@ -85,8 +85,8 @@ class ToDoItemViewController: UIViewController, UINavigationBarDelegate,  UIBarP
                 
                 var names = [String]()
                 
-                for userDict in result as [NSDictionary]{
-                    let uname = userDict["username"] as String
+                for userDict in result as! [NSDictionary]{
+                    let uname = userDict["username"] as! String
                     names.append(uname)
                     self.lastUserQueryResuls[uname] = userDict
                 }
@@ -151,7 +151,7 @@ class ToDoItemViewController: UIViewController, UINavigationBarDelegate,  UIBarP
         })
     }
     
-    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         
         self.selectedImage = image //editingInfo[UIImagePickerControllerEditedImage] as? UIImage
         self.selectedImageView.image = self.selectedImage
@@ -172,24 +172,24 @@ class ToDoItemViewController: UIViewController, UINavigationBarDelegate,  UIBarP
         self.text.resignFirstResponder()
     }
     
-    func positionForBar(bar: UIBarPositioning!) -> UIBarPosition
+    func positionForBar(bar: UIBarPositioning) -> UIBarPosition
     {
         return UIBarPosition.TopAttached
     }
     
     // Textfield
     
-    func textFieldDidEndEditing(textField: UITextField!)
+    func textFieldDidEndEditing(textField: UITextField)
     {
         //self.dismissViewControllerAnimated(true, completion: nil);
     }
     
-    func textFieldShouldEndEditing(textField: UITextField!) -> Bool
+    func textFieldShouldEndEditing(textField: UITextField) -> Bool
     {
         return true
     }
     
-    func textFieldShouldReturn(textField: UITextField!) -> Bool
+    func textFieldShouldReturn(textField: UITextField) -> Bool
     {
         saveItem()
         

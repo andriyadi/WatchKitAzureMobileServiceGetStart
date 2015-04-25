@@ -92,7 +92,7 @@ class ToDoEngine {
             todoTable = self.client.tableWithName("UserTodoItem")
         }
         
-        todoTable?.update(task, completion: completion)
+        todoTable?.update(task as [NSObject : AnyObject], completion: completion)
     }
     
     func createTask(text: String, assigneeId: String?, photo: UIImage?, completion: MSItemBlock)
@@ -121,6 +121,6 @@ class ToDoEngine {
             todoTable = self.client.tableWithName("UserTodoItem")
         }
         
-        todoTable?.insert(itemToInsert, completion)
+        todoTable?.insert(itemToInsert, completion: completion)
     }
 }

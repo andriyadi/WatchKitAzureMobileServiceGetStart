@@ -35,7 +35,7 @@ class InterfaceController: WKInterfaceController {
         
         for (index, val) in enumerate(records) {
             if let taskRow = tableView.rowControllerAtIndex(index) as? TaskRowController {
-                let taskName = val["text"] as String
+                let taskName = val["text"] as! String
                 taskRow.taskLabel.setText(taskName)
             }
         }
@@ -74,7 +74,7 @@ class InterfaceController: WKInterfaceController {
                 }
             }
             
-            self.records = replyDict["data"] as [Dictionary<String, AnyObject>]
+            self.records = replyDict["data"] as! [Dictionary<String, AnyObject>]
             self.configureTable()
         })
     }

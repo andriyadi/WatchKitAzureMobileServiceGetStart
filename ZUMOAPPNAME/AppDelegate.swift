@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func completeTask(task: Dictionary<String, AnyObject>, reply: (([NSObject : AnyObject]!) -> Void)!) {
         
-        let mutTask = (task as NSDictionary).mutableCopy() as NSMutableDictionary
+        let mutTask = (task as NSDictionary).mutableCopy() as! NSMutableDictionary
         
         mutTask["complete"] = true
         
@@ -53,24 +53,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
     }
     
-    func application(application: UIApplication!, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]!, reply: (([NSObject : AnyObject]!) -> Void)!) {
+    func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
 
-        if let action = userInfo["action"] as? String {
-            if action == "loadTasks" {
-                println("userInfo: \(userInfo)")
-                //reply(["reply": "OK"])
-                
-                loadTasks (reply)
-            }
-            else if action == "completeTask" {
-                if let data = userInfo["data"] as? Dictionary<String, AnyObject> {
-                    completeTask(data, reply: reply)
+        if let userInfo = userInfo {
+            if let action = userInfo["action"] as? String {
+                if action == "loadTasks" {
+                    println("userInfo: \(userInfo)")
+                    //reply(["reply": "OK"])
+                    
+                    loadTasks (reply)
+                }
+                else if action == "completeTask" {
+                    if let data = userInfo["data"] as? Dictionary<String, AnyObject> {
+                        completeTask(data, reply: reply)
+                    }
                 }
             }
         }
     }
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
         let appearance = UINavigationBar.appearance()
